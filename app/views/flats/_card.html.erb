@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <%= link_to flat_path(flat), class: 'text-decoration-none fw-lighter text-black' do %>
+    <h5 class="card-title"><%= flat.name %></h5>
+    <p class="card-text"><%= flat.description %></p>
+    <div class="card-subtitle d-flex justify-content-end align-items-center">
+      <span>🧑‍🤝‍🧑 <%= flat.number_of_guests %></span>
+      <span>💲 <%= flat.price_per_night %></span>
+    </div>
+    <% end %>
+  </div>
+</div>

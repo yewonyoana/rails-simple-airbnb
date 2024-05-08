@@ -1,0 +1,18 @@
+<div class="container mt-2">
+  <div class="row justify-content-around">
+    <div class="col-12 col-sm-8">
+      <p>
+        <%= link_to '< Flats', flats_path, class: 'btn-light opacity-25 text-decoration-none' %>
+      </p>
+      <div class="d-flex align-items-center">
+        <h1 class="md-3 fw-bold"><%= @flat.name %></h1>
+      </div>
+      <div class="d-flex flex-column justify-content-center align-items-center mt-2 fw-lighter opacity-75">
+        <p>📍 <%= @flat.address  %></p>
+        <p>✍️ <%= @flat.description  %></p>
+      </div>
+      <div class="d-flex flex-column align-items-end fw-lighter opacity-75;">
+        <p>🧑‍🤝‍🧑 <%= @flat.number_of_guests  %></p>
+        <p>💲 <%= @flat.price_per_night  %></p>
+      </div>
+</div>

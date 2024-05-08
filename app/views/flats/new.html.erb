@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <div class="mb-3">
+    <%= link_to '< Flats', flats_path, class: 'btn-light opacity-25 text-decoration-none' %>
+  </div>
+  <h1>Upload a Flat</h1>
+  <%= simple_form_for @flat do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.input :number_of_guests %>
+    <%= f.input :price_per_night %>
+    <%= f.submit class: 'btn btn-primary mt-3' %>
+  <% end %>
+</div>

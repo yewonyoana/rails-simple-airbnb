@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <div class="d-flex align-items-center">
+    <h1 class="fw-bolder">All Flats</h1>
+    <div class="ml-5">
+      <%= link_to new_flat_path, class: 'text-dark text-decoration-none h5' do %>
+          <i class="fa-solid fa-plus"></i>
+      <% end %>
+    </div>
+  </div>
+  <% @flats.each do |flat| %>
+    <%= render 'flats/card', flat: flat %>
+  <% end %>
+</div>
